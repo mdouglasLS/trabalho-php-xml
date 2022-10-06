@@ -1,12 +1,13 @@
 # Fórum de Dev Web - Unopar
 
 ## Como rodar
+- É preciso ter pelo menos o PHP instalado
 - Clonar o projeto ou fazer o download
 - Opção 1: executar no terminar `php -S localhost:8000` no mesmo diretório do projeto
 - Opção 2: caso use o xamp para rodar o apache, pode mover a posta do projeto para dentro de `C:\xamp\htdocs`
 
 
-## Requisitos:
+## Requisitos da atividade:
 - Criar um arquivo XML contendo os signos e estruturado da seguinte forma: 
   - Nome
   - Características
