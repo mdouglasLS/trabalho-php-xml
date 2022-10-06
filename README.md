@@ -4,7 +4,7 @@
 - É preciso ter pelo menos o PHP instalado
 - Clonar o projeto ou fazer o download
 - Opção 1: executar no terminal `php -S localhost:8000` no mesmo diretório do projeto
-- Opção 2: caso use o xamp para rodar o apache, pode mover a posta do projeto para dentro de `C:\xamp\htdocs`
+- Opção 2: caso use o xamp para rodar o apache, pode mover a pasta do projeto para dentro de `C:\xamp\htdocs`
 
 
 ## Requisitos da atividade:
