@@ -70,4 +70,4 @@
     }    
 
     //Mostra o arquivo responsável por informar ao usuário o seu signo
-    echo include 'mostrar-signo.php';
+    include 'mostrar-signo.php';
