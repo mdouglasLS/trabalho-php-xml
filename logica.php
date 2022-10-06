@@ -9,23 +9,23 @@
     $signos = simplexml_load_file('SignosXML.xml');
 
     //Array para armazenar os dados do signo do usuário
-    $signoResult = [];
+    $signoUsuario = [];
 
-    //Itera os elementos do XML
+    //Itera os elementos que contém no XML
     foreach($signos->signo as $signo) {
-        
-        if(compararDatas($signo->dataInicio, $signo->dataFim, $dataUsuario)) { 
-       
-          $signoResult = [
+
+        $compararDatas = compararDatas($signo->dataInicio, $signo->dataFim, $dataUsuario);
+
+        if($compararDatas) { 
+          $signoUsuario = [
             'nome' => $signo->signoNome,
             'descricao' => $signo->descricao,
             'dataInicio' => $signo->dataInicio,
             'dataFim' => $signo->dataFim,
             'imagem' => getImagemSigno($signo->signoNome),
           ];
-  
         }
-  
+
       }    
 
     //Função responsável por comparar a data de nascimento do usuário com as datas de INÍCIO E FINAL de cada signo
@@ -69,5 +69,5 @@
       return $urlImage;
     }    
 
-    //Mostra o arquivo responsável por informar ao usuário o seu signo
+    //Inclui o arquivo responsável por informar ao usuário o seu signo
     include 'mostrar-signo.php';

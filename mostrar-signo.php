@@ -17,14 +17,14 @@
 
         <div class="row">
             <div class="col-sm-12 col-lg-8">
-              <h2>Seu signo é <?= $signoResult['nome'] ?></h2>
-              <p><?= $signoResult['descricao'] ?></p>
+              <h2>Seu signo é <?= $signoUsuario['nome'] ?></h2>
+              <p><?= $signoUsuario['descricao'] ?></p>
             </div>
             
-            <img style="max-width: 180px;" class="col-sm-12 col-lg-4 mx-auto" src="<?= $signoResult['imagem'] ?>">
+            <img style="max-width: 180px;" class="col-sm-12 col-lg-4 mx-auto" src="<?= $signoUsuario['imagem'] ?>">
         </div>
         
-        <p class="mt-3 fw-bold fst-italic">de <?= $signoResult['dataInicio'] ?> até <?= $signoResult['dataFim'] ?></p>
+        <p class="mt-3 fw-bold fst-italic">de <?= $signoUsuario['dataInicio'] ?> até <?= $signoUsuario['dataFim'] ?></p>
         
         <a class="btn mt-3 w-50" href="index.php">Voltar</a>
     </div>
